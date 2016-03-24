@@ -75,7 +75,7 @@ self.title = @"蓝牙设备列表";
   [self.tableView reloadData];
 }
 
--(void)blueToothStatusChanged:(BOOL)enabled
+-(void)blueToothStatusChanged:(int)type enabled:(BOOL)enabled
 {
   [self.view makeToast:enabled?@"蓝牙可用状态":@"蓝牙不可用状态" duration:2 position:nil];
 }

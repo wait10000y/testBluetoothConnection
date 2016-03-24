@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E7148BA61C86A43D00A3F092 /* CBPeripheral+desc.m in Sources */ = {isa = PBXBuildFile; fileRef = E7148BA51C86A43D00A3F092 /* CBPeripheral+desc.m */; };
-		E7148BA91C86A45E00A3F092 /* NSObject+runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = E7148BA81C86A45E00A3F092 /* NSObject+runtime.m */; };
 		E71EC9A21C7AE2EB003A4BDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E71EC9A11C7AE2EB003A4BDF /* main.m */; };
 		E71EC9A51C7AE2EB003A4BDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E71EC9A41C7AE2EB003A4BDF /* AppDelegate.m */; };
 		E71EC9A81C7AE2EB003A4BDF /* DeviceInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E71EC9A71C7AE2EB003A4BDF /* DeviceInfoViewController.m */; };
@@ -19,7 +17,6 @@
 		E71EC9C61C7AE2EB003A4BDF /* TestBlueToothConnectionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E71EC9C51C7AE2EB003A4BDF /* TestBlueToothConnectionUITests.m */; };
 		E71EC9D41C7AE453003A4BDF /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E71EC9D31C7AE453003A4BDF /* CoreBluetooth.framework */; };
 		E71EC9D71C7AE58C003A4BDF /* OfficeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E71EC9D61C7AE58C003A4BDF /* OfficeListViewController.m */; };
-		E71ECAE81C7AEC01003A4BDF /* DeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E71ECAE71C7AEC01003A4BDF /* DeviceManager.m */; };
 		E71ECAEB1C7B0228003A4BDF /* DeviceListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E71ECAEA1C7B0228003A4BDF /* DeviceListViewController.m */; };
 		E788B34B1C802E9400F525B8 /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E788B2F01C802E9400F525B8 /* BaseObject.m */; };
 		E788B34C1C802E9400F525B8 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E788B2F21C802E9400F525B8 /* BaseTableViewController.m */; };
@@ -65,6 +62,15 @@
 		E788B3741C802E9400F525B8 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E788B3461C802E9400F525B8 /* UIScrollView+MJExtension.m */; };
 		E788B3751C802E9400F525B8 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = E788B3481C802E9400F525B8 /* UIScrollView+MJRefresh.m */; };
 		E788B3761C802E9400F525B8 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E788B34A1C802E9400F525B8 /* UIView+MJExtension.m */; };
+		E7B6CA3A1C9BEACB000C7B24 /* CBPeripheral+desc.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B6CA261C9BEACB000C7B24 /* CBPeripheral+desc.m */; };
+		E7B6CA3B1C9BEACB000C7B24 /* DeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B6CA281C9BEACB000C7B24 /* DeviceManager.m */; };
+		E7B6CA3C1C9BEACB000C7B24 /* NSObject+runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B6CA2A1C9BEACB000C7B24 /* NSObject+runtime.m */; };
+		E7B6CA3D1C9BEACB000C7B24 /* MPBluetoothUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B6CA2F1C9BEACB000C7B24 /* MPBluetoothUtils.m */; };
+		E7B6CA3E1C9BEACB000C7B24 /* MPCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B6CA311C9BEACB000C7B24 /* MPCentralManager.m */; };
+		E7B6CA3F1C9BEACB000C7B24 /* MPCharacteristic.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B6CA331C9BEACB000C7B24 /* MPCharacteristic.m */; };
+		E7B6CA401C9BEACB000C7B24 /* MPDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B6CA351C9BEACB000C7B24 /* MPDescriptor.m */; };
+		E7B6CA411C9BEACB000C7B24 /* MPPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B6CA371C9BEACB000C7B24 /* MPPeripheral.m */; };
+		E7B6CA421C9BEACB000C7B24 /* MPService.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B6CA391C9BEACB000C7B24 /* MPService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,10 +91,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E7148BA41C86A43D00A3F092 /* CBPeripheral+desc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+desc.h"; sourceTree = "<group>"; };
-		E7148BA51C86A43D00A3F092 /* CBPeripheral+desc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+desc.m"; sourceTree = "<group>"; };
-		E7148BA71C86A45E00A3F092 /* NSObject+runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+runtime.h"; sourceTree = "<group>"; };
-		E7148BA81C86A45E00A3F092 /* NSObject+runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+runtime.m"; sourceTree = "<group>"; };
 		E71EC99D1C7AE2EA003A4BDF /* TestBlueToothConnection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestBlueToothConnection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E71EC9A11C7AE2EB003A4BDF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E71EC9A31C7AE2EB003A4BDF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -108,8 +110,6 @@
 		E71EC9D31C7AE453003A4BDF /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		E71EC9D51C7AE58C003A4BDF /* OfficeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfficeListViewController.h; sourceTree = "<group>"; };
 		E71EC9D61C7AE58C003A4BDF /* OfficeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfficeListViewController.m; sourceTree = "<group>"; };
-		E71ECAE61C7AEC01003A4BDF /* DeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceManager.h; sourceTree = "<group>"; };
-		E71ECAE71C7AEC01003A4BDF /* DeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceManager.m; sourceTree = "<group>"; };
 		E71ECAE91C7B0228003A4BDF /* DeviceListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceListViewController.h; sourceTree = "<group>"; };
 		E71ECAEA1C7B0228003A4BDF /* DeviceListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceListViewController.m; sourceTree = "<group>"; };
 		E788B2EF1C802E9400F525B8 /* BaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseObject.h; sourceTree = "<group>"; };
@@ -193,6 +193,26 @@
 		E788B3491C802E9400F525B8 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		E788B34A1C802E9400F525B8 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
 		E788B3771C802EB900F525B8 /* BaseDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseDefine.h; sourceTree = "<group>"; };
+		E7B6CA251C9BEACB000C7B24 /* CBPeripheral+desc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+desc.h"; sourceTree = "<group>"; };
+		E7B6CA261C9BEACB000C7B24 /* CBPeripheral+desc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+desc.m"; sourceTree = "<group>"; };
+		E7B6CA271C9BEACB000C7B24 /* DeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceManager.h; sourceTree = "<group>"; };
+		E7B6CA281C9BEACB000C7B24 /* DeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceManager.m; sourceTree = "<group>"; };
+		E7B6CA291C9BEACB000C7B24 /* NSObject+runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+runtime.h"; sourceTree = "<group>"; };
+		E7B6CA2A1C9BEACB000C7B24 /* NSObject+runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+runtime.m"; sourceTree = "<group>"; };
+		E7B6CA2C1C9BEACB000C7B24 /* MPBluetoothKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBluetoothKit.h; sourceTree = "<group>"; };
+		E7B6CA2D1C9BEACB000C7B24 /* MPBluetoothKitBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBluetoothKitBlocks.h; sourceTree = "<group>"; };
+		E7B6CA2E1C9BEACB000C7B24 /* MPBluetoothUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBluetoothUtils.h; sourceTree = "<group>"; };
+		E7B6CA2F1C9BEACB000C7B24 /* MPBluetoothUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBluetoothUtils.m; sourceTree = "<group>"; };
+		E7B6CA301C9BEACB000C7B24 /* MPCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCentralManager.h; sourceTree = "<group>"; };
+		E7B6CA311C9BEACB000C7B24 /* MPCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCentralManager.m; sourceTree = "<group>"; };
+		E7B6CA321C9BEACB000C7B24 /* MPCharacteristic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCharacteristic.h; sourceTree = "<group>"; };
+		E7B6CA331C9BEACB000C7B24 /* MPCharacteristic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCharacteristic.m; sourceTree = "<group>"; };
+		E7B6CA341C9BEACB000C7B24 /* MPDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDescriptor.h; sourceTree = "<group>"; };
+		E7B6CA351C9BEACB000C7B24 /* MPDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDescriptor.m; sourceTree = "<group>"; };
+		E7B6CA361C9BEACB000C7B24 /* MPPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPPeripheral.h; sourceTree = "<group>"; };
+		E7B6CA371C9BEACB000C7B24 /* MPPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPPeripheral.m; sourceTree = "<group>"; };
+		E7B6CA381C9BEACB000C7B24 /* MPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPService.h; sourceTree = "<group>"; };
+		E7B6CA391C9BEACB000C7B24 /* MPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				E788B2EC1C802E9400F525B8 /* BaseFrame */,
+				E7B6CA231C9BEACB000C7B24 /* BluetoothManager */,
 				E71EC9A31C7AE2EB003A4BDF /* AppDelegate.h */,
 				E71EC9A41C7AE2EB003A4BDF /* AppDelegate.m */,
 				E71EC9D51C7AE58C003A4BDF /* OfficeListViewController.h */,
@@ -254,12 +275,6 @@
 				E71ECAEA1C7B0228003A4BDF /* DeviceListViewController.m */,
 				E71EC9A61C7AE2EB003A4BDF /* DeviceInfoViewController.h */,
 				E71EC9A71C7AE2EB003A4BDF /* DeviceInfoViewController.m */,
-				E71ECAE61C7AEC01003A4BDF /* DeviceManager.h */,
-				E71ECAE71C7AEC01003A4BDF /* DeviceManager.m */,
-				E7148BA41C86A43D00A3F092 /* CBPeripheral+desc.h */,
-				E7148BA51C86A43D00A3F092 /* CBPeripheral+desc.m */,
-				E7148BA71C86A45E00A3F092 /* NSObject+runtime.h */,
-				E7148BA81C86A45E00A3F092 /* NSObject+runtime.m */,
 				E71EC9A91C7AE2EB003A4BDF /* Main.storyboard */,
 				E71EC9AC1C7AE2EB003A4BDF /* Assets.xcassets */,
 				E71EC9AE1C7AE2EB003A4BDF /* LaunchScreen.storyboard */,
@@ -487,6 +502,49 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		E7B6CA231C9BEACB000C7B24 /* BluetoothManager */ = {
+			isa = PBXGroup;
+			children = (
+				E7B6CA241C9BEACB000C7B24 /* Manager */,
+				E7B6CA2B1C9BEACB000C7B24 /* MPBluetoothKit */,
+			);
+			path = BluetoothManager;
+			sourceTree = "<group>";
+		};
+		E7B6CA241C9BEACB000C7B24 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E7B6CA271C9BEACB000C7B24 /* DeviceManager.h */,
+				E7B6CA281C9BEACB000C7B24 /* DeviceManager.m */,
+				E7B6CA251C9BEACB000C7B24 /* CBPeripheral+desc.h */,
+				E7B6CA261C9BEACB000C7B24 /* CBPeripheral+desc.m */,
+				E7B6CA291C9BEACB000C7B24 /* NSObject+runtime.h */,
+				E7B6CA2A1C9BEACB000C7B24 /* NSObject+runtime.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		E7B6CA2B1C9BEACB000C7B24 /* MPBluetoothKit */ = {
+			isa = PBXGroup;
+			children = (
+				E7B6CA2C1C9BEACB000C7B24 /* MPBluetoothKit.h */,
+				E7B6CA2D1C9BEACB000C7B24 /* MPBluetoothKitBlocks.h */,
+				E7B6CA2E1C9BEACB000C7B24 /* MPBluetoothUtils.h */,
+				E7B6CA2F1C9BEACB000C7B24 /* MPBluetoothUtils.m */,
+				E7B6CA301C9BEACB000C7B24 /* MPCentralManager.h */,
+				E7B6CA311C9BEACB000C7B24 /* MPCentralManager.m */,
+				E7B6CA321C9BEACB000C7B24 /* MPCharacteristic.h */,
+				E7B6CA331C9BEACB000C7B24 /* MPCharacteristic.m */,
+				E7B6CA341C9BEACB000C7B24 /* MPDescriptor.h */,
+				E7B6CA351C9BEACB000C7B24 /* MPDescriptor.m */,
+				E7B6CA361C9BEACB000C7B24 /* MPPeripheral.h */,
+				E7B6CA371C9BEACB000C7B24 /* MPPeripheral.m */,
+				E7B6CA381C9BEACB000C7B24 /* MPService.h */,
+				E7B6CA391C9BEACB000C7B24 /* MPService.m */,
+			);
+			path = MPBluetoothKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -632,8 +690,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E71EC9D71C7AE58C003A4BDF /* OfficeListViewController.m in Sources */,
+				E7B6CA3E1C9BEACB000C7B24 /* MPCentralManager.m in Sources */,
+				E7B6CA411C9BEACB000C7B24 /* MPPeripheral.m in Sources */,
+				E7B6CA3B1C9BEACB000C7B24 /* DeviceManager.m in Sources */,
+				E7B6CA3C1C9BEACB000C7B24 /* NSObject+runtime.m in Sources */,
+				E7B6CA3A1C9BEACB000C7B24 /* CBPeripheral+desc.m in Sources */,
 				E788B3711C802E9400F525B8 /* MJRefreshStateHeader.m in Sources */,
-				E7148BA91C86A45E00A3F092 /* NSObject+runtime.m in Sources */,
+				E7B6CA3D1C9BEACB000C7B24 /* MPBluetoothUtils.m in Sources */,
 				E788B34E1C802E9400F525B8 /* BaseViewController.m in Sources */,
 				E788B3631C802E9400F525B8 /* MBProgressHUD.m in Sources */,
 				E788B36F1C802E9400F525B8 /* MJRefreshGifHeader.m in Sources */,
@@ -641,7 +704,6 @@
 				E788B3681C802E9400F525B8 /* MJRefreshHeader.m in Sources */,
 				E71EC9A81C7AE2EB003A4BDF /* DeviceInfoViewController.m in Sources */,
 				E788B34D1C802E9400F525B8 /* BaseView.m in Sources */,
-				E7148BA61C86A43D00A3F092 /* CBPeripheral+desc.m in Sources */,
 				E788B34B1C802E9400F525B8 /* BaseObject.m in Sources */,
 				E788B3541C802E9400F525B8 /* UIColor+HEX.m in Sources */,
 				E788B3511C802E9400F525B8 /* NSFileManager+Paths.m in Sources */,
@@ -662,14 +724,16 @@
 				E788B3571C802E9400F525B8 /* UIImage+Color.m in Sources */,
 				E788B3521C802E9400F525B8 /* NSString+UUID.m in Sources */,
 				E788B3741C802E9400F525B8 /* UIScrollView+MJExtension.m in Sources */,
+				E7B6CA401C9BEACB000C7B24 /* MPDescriptor.m in Sources */,
 				E788B3751C802E9400F525B8 /* UIScrollView+MJRefresh.m in Sources */,
+				E7B6CA3F1C9BEACB000C7B24 /* MPCharacteristic.m in Sources */,
 				E71ECAEB1C7B0228003A4BDF /* DeviceListViewController.m in Sources */,
+				E7B6CA421C9BEACB000C7B24 /* MPService.m in Sources */,
 				E788B3691C802E9400F525B8 /* MJRefreshAutoGifFooter.m in Sources */,
 				E788B35A1C802E9400F525B8 /* UIView+Toast.m in Sources */,
 				E788B3651C802E9400F525B8 /* MJRefreshBackFooter.m in Sources */,
 				E788B3501C802E9400F525B8 /* NSDate+Extension.m in Sources */,
 				E788B3561C802E9400F525B8 /* UIImage+Capture.m in Sources */,
-				E71ECAE81C7AEC01003A4BDF /* DeviceManager.m in Sources */,
 				E788B3671C802E9400F525B8 /* MJRefreshFooter.m in Sources */,
 				E788B34C1C802E9400F525B8 /* BaseTableViewController.m in Sources */,
 				E788B3641C802E9400F525B8 /* MJRefreshAutoFooter.m in Sources */,

@@ -117,10 +117,10 @@
   NSString *name = self.name?:self.advertisementData[@"kCBAdvDataLocalName"];
   NSData *data = self.advertisementData[@"kCBAdvDataManufacturerData"];
   NSString *desc;
-  if(data){
-    const char *valueString = [[data description] cStringUsingEncoding: NSUTF8StringEncoding];
-    desc = [NSString stringWithCString:valueString encoding:NSUTF8StringEncoding];
-  }
+//  if(data){
+//    const char *valueString = [[data description] cStringUsingEncoding: NSUTF8StringEncoding];
+//    desc = [NSString stringWithCString:valueString encoding:NSUTF8StringEncoding];
+//  }
 //  NSString *desc = data?[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]:nil;
   NSLog(@"==== showTitle:name:%@,desc:%@,data:%@ =====",name,desc,data);
   if (!name && !desc) {

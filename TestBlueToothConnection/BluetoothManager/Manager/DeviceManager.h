@@ -15,7 +15,7 @@
 /*
  是否可用
  */
--(void)blueToothStatusChanged:(BOOL)enabled;
+-(void)blueToothStatusChanged:(int)type enabled:(BOOL)enabled;
 -(void)deviceManager:(id)sender updateDeviceList:(NSArray *)deviceList;
 
 /*
@@ -26,6 +26,14 @@
 -(void)deviceManager:(id)sender didDisconnectDevice:(CBPeripheral *)device;
 -(void)deviceManager:(id)sender didFailToConnectDevice:(CBPeripheral *)device;
 
+/*
+ 状态改变通知
+ CBPeripheral
+ */
+
+-(void)deviceItem:(CBPeripheral *)sender didUpdateServices:(NSArray *)services;
+
+
 @end
 
 
@@ -33,6 +41,8 @@
 @property (nonatomic,weak) id<DeviceManagerDelegate>delegate;
 @property (nonatomic) CBCentralManager *blueToothManager;
 @property (nonatomic,readonly) NSMutableArray *deviceList; // CBPeripheral list
+
+
 
 +(instancetype)sharedObject;
 

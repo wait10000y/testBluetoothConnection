@@ -39,6 +39,7 @@
   self.title = @"蓝牙设备详情";
   
   self.statusTitle.text = self.dataItem.connectionDesc;
+
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -73,36 +74,46 @@
 {
   return 1;
 }
+
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
   if (pickerView == self.pickerServices) {
-    return self.mServiceList.count;
+    return self.mServiceList.count?:1;
   }else{
-    return self.mCharacteristics.count;
+    return self.mCharacteristics.count?:1;
   }
   
 }
 
 - (nullable NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
+  NSString *title = @"no Service";
   if (pickerView == self.pickerServices) {
-    CBService *service = self.mServiceList[row];
-    //  service.UUID;
-    NSString *title = service.UUID.UUIDString;
-    return title;
+    if(self.mServiceList.count>row){
+      CBService *service = self.mServiceList[row];
+      //  service.UUID;
+     title = service.UUID.UUIDString;
+    }
   }else{
-    CBCharacteristic *chart = self.mCharacteristics[row];
-    return chart.UUID.UUIDString;
+    title = @"no Characteristic";
+    if (self.mCharacteristics.count>row) {
+      CBCharacteristic *chart = self.mCharacteristics[row];
+      title = chart.UUID.UUIDString;
+    }
   }
-  
+  return title;
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
   if (pickerView == self.pickerServices) {
-    self.mSelectedServie = self.mServiceList[row];
+    if (self.mServiceList.count>row) {
+      self.mSelectedServie = self.mServiceList[row];
+    }
   }else{
-    self.mSelectedCharacteristic = self.mCharacteristics[row];
+    if (self.mCharacteristics.count>row) {
+      self.mSelectedCharacteristic = self.mCharacteristics[row];
+    }
   }
 }
 

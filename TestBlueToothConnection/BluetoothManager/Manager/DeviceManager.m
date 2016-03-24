@@ -108,8 +108,8 @@
   if (isOK) {
     [self scanPeripherals];
   }
-  if ([self.delegate respondsToSelector:@selector(blueToothStatusChanged:)]) {
-    [self.delegate blueToothStatusChanged:isOK];
+  if ([self.delegate respondsToSelector:@selector(blueToothStatusChanged:enabled:)]) {
+    [self.delegate blueToothStatusChanged:central.state enabled:isOK];
   }
   if ([self.delegate respondsToSelector:@selector(deviceManager:updateDeviceList:)]) {
     [self.delegate deviceManager:central updateDeviceList:self.deviceList];
@@ -169,7 +169,7 @@
       [self.deviceDict setObject:peripheral forKey:pId];
       [self.deviceList addObject:peripheral];
     }
-    DLog(@" ----- %@ 详情%@ , 广播信息:%@------ ",disType,peripheral,[peripheral showAdvertisementInfo]);
+    DLog(@" ----- ====== %@ 详情%@ , 广播信息:%@------ ",disType,peripheral,[peripheral showAdvertisementInfo]);
   }else{
     DLog(@"--- 发现蓝牙设备 未有Id ---");
   }
@@ -217,6 +217,7 @@
   }
 }
 
+#pragma mark ===================================================================================
 
 #pragma mark --- CBPeripheralDelegate ---
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSError *)error{
